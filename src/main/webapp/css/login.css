@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #8ec5fc, #e0c3fc); /* soft gradient */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: rgb(255, 255, 255, 0.2);
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 350px;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: black;
+}
+
+input[type="email"],
+input[type="password"],
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+input[type="submit"] {
+    background-color: #28a745;;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: transparent;
+    border: 2px solid #218838;
+    color: #218838; /* needs to stay here because of the color property of a tag */
+    text-decoration: none;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Register button style override */
+.register-btn {
+    background-color: #007bff; /* Blue color */
+}
+
+.register-btn:hover {
+    background-color: #218838; /* Darker blue on hover */
+}
+
+
+.error-box {
+    background: rgba(255, 0, 0, 0.1);
+    color: #b30000;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    padding: 12px 20px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+

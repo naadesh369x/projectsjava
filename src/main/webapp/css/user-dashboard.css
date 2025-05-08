@@ -1,0 +1,233 @@
+/* user-dashboard.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.top-bar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+.account-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.account-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a,
+.dropdown-content form input[type="submit"] {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    background-color: white;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-content a:hover,
+.dropdown-content form input[type="submit"]:hover {
+    background-color: #f1f1f1;
+}
+
+.show-dropdown {
+    display: block;
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.search-bar input,
+.search-bar select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    min-width: 200px;
+}
+
+.property-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.property-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.property-card:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.property-info {
+    padding: 15px;
+}
+
+.property-info h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #3498db;
+}
+
+.property-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.property-info .location {
+    color: #888;
+}
+
+.property-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.badge {
+    background-color: #2ecc71;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.property-meta .price {
+    font-size: 16px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.view-btn,
+.book-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.view-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.book-btn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.view-btn:hover {
+    background-color: #2980b9;
+}
+
+.book-btn:hover {
+    background-color: #27ae60;
+}
+.favorite-btn {
+    background-color: #e83e8c;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.favorite-btn:hover {
+    background-color: #c8236c;
+}
+
+.view-favorites-btn {
+    padding: 10px 15px;
+    background-color: #ffc107;
+    color: #000;
+    border-radius: 6px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.unfavorite-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.unfavorite-btn:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+.unfavorite-btn:active {
+    background-color: #cc0000;
+    transform: scale(0.98);
+}

@@ -1,0 +1,205 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Navbar / Header */
+.header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header .auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.auth-buttons a:hover {
+    background-color: #0056b3;
+}
+
+/* Dashboard Layout */
+.container {
+    padding: 20px 40px;
+}
+
+h2.section-title {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Filter Section */
+.filter-box {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.filter-box input,
+.filter-box select,
+.filter-box button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-box button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.filter-box button:hover {
+    background-color: #218838;
+}
+
+/* Package Cards */
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.package-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.package-card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.package-card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.package-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.package-card .btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-book {
+    background-color: #007bff;
+}
+
+.btn-book:hover {
+    background-color: #0056b3;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* Form Section (Add Property) */
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    font-size: 16px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .filter-box {
+        flex-direction: column;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 
 @WebServlet("/add-property")
-@MultipartConfig(fileSizeThreshold = 1024 * 1024 * 1,    // 1MB
+@MultipartConfig(fileSizeThreshold = 1024 * 1024 * 3,    // 1MB
         maxFileSize = 1024 * 1024 * 10,                  // 10MB
         maxRequestSize = 1024 * 1024 * 15)               // 15MB
 public class AddPropertyServlet extends HttpServlet {
